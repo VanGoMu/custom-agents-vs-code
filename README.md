@@ -1,8 +1,8 @@
 # VS Code Custom Agents
 
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/epicuro/vs-code-custom-agents/releases)
-[![Handoff Smoke CI](https://github.com/epicuro/vs-code-custom-agents/actions/workflows/handoff-install-smoke.yml/badge.svg)](https://github.com/epicuro/vs-code-custom-agents/actions/workflows/handoff-install-smoke.yml)
-[![License](https://img.shields.io/github/license/epicuro/vs-code-custom-agents)](LICENSE)
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/epicuro/custom-agents-vs-code/releases)
+[![Handoff Smoke CI](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml/badge.svg)](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml)
+[![License](https://img.shields.io/github/license/epicuro/custom-agents-vs-code)](LICENSE)
 
 Coleccion de agentes y handoffs listos para usar con GitHub Copilot Chat en VS Code.
 
