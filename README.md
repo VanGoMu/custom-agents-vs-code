@@ -1,4 +1,4 @@
-# VS Code Custom Agents
+# Custom Agents VS Code
 
 [![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/epicuro/custom-agents-vs-code/releases)
 [![Handoff Smoke CI](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml/badge.svg)](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml)
