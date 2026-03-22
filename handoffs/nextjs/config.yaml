@@ -1,0 +1,15 @@
+agents:
+  1: prompt-validator
+  2: next-project-organizer
+  3: next-test-engineer
+  4: next-developer
+  5: next-devops
+name: nextjs
+description: Flujo TDD completo para proyectos Next.js App Router. Decide OOP/Funcional para la capa de negocio y estrategia Server/Client Components, escribe tests con Jest + next/jest + RTL (RED), implementa el codigo minimo con TypeScript strict + SOLID (GREEN) y verifica cobertura final en Docker. Menciona Playwright como siguiente nivel E2E.
+dependencias:
+  - node
+  - npm
+  - typescript
+  - jest
+  - "@testing-library/react"
+  - docker

@@ -1,0 +1,14 @@
+agents:
+  1: prompt-validator
+  2: python-project-organizer
+  3: python-test-engineer
+  4: python-developer
+  5: python-devops
+name: python
+description: Flujo TDD completo para proyectos Python. Decide OOP o Funcional con justificacion, define los contratos de API con SOLID, escribe la suite de tests (RED), implementa el codigo minimo para hacerlos pasar (GREEN) y verifica cobertura final con pytest-cov en Docker.
+dependencias:
+  - python3
+  - pip
+  - pytest
+  - pytest-cov
+  - docker

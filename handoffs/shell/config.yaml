@@ -1,0 +1,13 @@
+agents:
+  1: prompt-validator
+  2: shell-project-organizer
+  3: shell-test-engineer
+  4: shell-developer
+  5: shell-devops
+name: shell
+description: Flujo completo para proyectos de scripting shell. Organiza el framework con OCP y separacion de dependencias, desarrolla los scripts con SOLID y shellcheck, y genera la suite de tests en Docker con bats-core. Utiliza el tests primero y TDD para asegurar calidad y mantenibilidad. El agente de validación de prompts garantiza claridad y precisión en cada paso del proceso.
+dependencias:
+  - bash
+  - shellcheck
+  - bats-core
+  - docker

@@ -1,0 +1,13 @@
+agents:
+  1: prompt-validator
+  2: node-project-organizer
+  3: node-test-engineer
+  4: node-developer
+  5: node-devops
+name: node
+description: Flujo TDD completo para proyectos Node.js/TypeScript. Decide OOP o Funcional y Jest o Vitest con justificacion, define los contratos TypeScript con SOLID, escribe la suite de tests (RED), implementa el codigo minimo para hacerlos pasar (GREEN) y verifica cobertura final en Docker.
+dependencias:
+  - node
+  - npm
+  - typescript
+  - docker

@@ -1,0 +1,10 @@
+agents:
+  1: prompt-validator
+  2: project-planner
+  3: sprint-planner
+  4: test-strategy
+  5: ci-setup
+name: project-inicializer
+description: This agent is responsible for initializing a new software project by validating the project requirements, creating a project plan, organizing sprints, defining a test strategy, and setting up continuous integration (CI) pipelines.
+dependencias:
+  - git
