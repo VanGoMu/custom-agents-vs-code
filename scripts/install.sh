@@ -250,14 +250,14 @@ parse_agents_from_yaml() {
   local config_file="$1"
   awk '
     /^agents[[:space:]]*:[[:space:]]*$/ {in_agents=1; next}
-    in_agents && /^[[:space:]]*[^[:space:]]+[[:space:]]*:[[:space:]]*/ {
-      sub(/^[[:space:]]*[^[:space:]]+[[:space:]]*:[[:space:]]*/, "", $0)
+    in_agents && /^[^[:space:]]/ {exit}
+    in_agents && /^[[:space:]]+[^[:space:]]+[[:space:]]*:[[:space:]]*/ {
+      sub(/^[[:space:]]+[^[:space:]]+[[:space:]]*:[[:space:]]*/, "", $0)
       gsub(/^"|"$/, "", $0)
       gsub(/^\047|\047$/, "", $0)
       print $0
       next
     }
-    in_agents && /^[^[:space:]]/ {exit}
   ' "$config_file"
 }
 
