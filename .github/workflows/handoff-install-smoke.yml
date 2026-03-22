@@ -1,0 +1,51 @@
+name: Handoff Install Smoke
+
+"on":
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install-handoffs-smoke:
+    runs-on: ubuntu-latest
+    container:
+      image: ubuntu:24.04
+    steps:
+      - name: Install base tools in container
+        run: |
+          apt-get update
+          apt-get install -y git bash findutils
+
+      - name: Clone repository in container
+        env:
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+          TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git clone "https://x-access-token:${TOKEN}@github.com/${REPO}.git" /tmp/repo
+          cd /tmp/repo
+          git checkout "${SHA}"
+
+      - name: Install and validate all handoffs
+        run: |
+          set -euo pipefail
+          cd /tmp/repo
+
+          mapfile -t handoffs < <(find handoffs -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
+
+          if [[ ${#handoffs[@]} -eq 0 ]]; then
+            echo "No handoffs found in repository."
+            exit 1
+          fi
+
+          echo "Handoffs detectados: ${handoffs[*]}"
+
+          for handoff in "${handoffs[@]}"; do
+            echo "==> Instalando handoff: ${handoff}"
+            ./scripts/install.sh --handoff "${handoff}" --repo
+
+            echo "==> Validando handoff: ${handoff}"
+            ./scripts/validate-handoff.sh --handoff "${handoff}" --repo
+          done

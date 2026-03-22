@@ -1,0 +1,13 @@
+agents:
+  1: prompt-validator
+  2: crewai-project-organizer
+  3: crewai-test-engineer
+  4: crewai-developer
+  5: crewai-devops
+name: crewai
+description: Flujo TDD completo para aplicaciones CrewAI en Python. Define arquitectura multiagente (agents, tasks, crews, process), contratos tipados, tests RED con doubles de LLM/tools, implementacion GREEN y verificacion final de cobertura en Docker.
+dependencias:
+  - python3
+  - pip
+  - pytest
+  - docker

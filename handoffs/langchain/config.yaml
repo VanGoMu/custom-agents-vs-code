@@ -1,0 +1,13 @@
+agents:
+  1: prompt-validator
+  2: langchain-project-organizer
+  3: langchain-test-engineer
+  4: langchain-developer
+  5: langchain-devops
+name: langchain
+description: Flujo TDD completo para aplicaciones LangChain en Python. Define arquitectura (LCEL/Chains o Agent+Tools), contratos tipados, tests RED con doubles de LLM, implementacion GREEN y verificacion final de cobertura en Docker.
+dependencias:
+  - python3
+  - pip
+  - pytest
+  - docker
