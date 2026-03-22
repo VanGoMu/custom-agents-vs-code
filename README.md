@@ -1,8 +1,8 @@
 # Custom Agents VS Code
 
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/epicuro/custom-agents-vs-code/releases)
-[![Handoff Smoke CI](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml/badge.svg)](https://github.com/epicuro/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml)
-[![License](https://img.shields.io/github/license/epicuro/custom-agents-vs-code)](https://github.com/VanGoMu/custom-agents-vs-code/blob/main/LICENSE)
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/VanGoMu/custom-agents-vs-code/releases)
+[![Handoff Smoke CI](https://github.com/VanGoMu/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml/badge.svg)](https://github.com/VanGoMu/custom-agents-vs-code/actions/workflows/handoff-install-smoke.yml)
+[![License](https://img.shields.io/github/license/VanGoMu/custom-agents-vs-code)](https://github.com/VanGoMu/custom-agents-vs-code/blob/main/LICENSE)
 
 Coleccion de agentes y handoffs listos para usar con GitHub Copilot Chat en VS Code.
 
@@ -40,18 +40,40 @@ Esta primera release esta enfocada en productividad de equipos que trabajan con 
 
 ## Inicio rapido
 
+### Desde GitHub (sin clonar)
+
+```bash
+# Instalar un agente en el perfil de usuario
+curl -fsSL https://raw.githubusercontent.com/VanGoMu/custom-agents-vs-code/main/scripts/bootstrap.sh | bash -s -- --agent shell-developer --profile
+
+# Instalar un handoff en el perfil de usuario
+curl -fsSL https://raw.githubusercontent.com/VanGoMu/custom-agents-vs-code/main/scripts/bootstrap.sh | bash -s -- --handoff python --profile
+
+# Instalar en el repo actual en lugar del perfil
+curl -fsSL https://raw.githubusercontent.com/VanGoMu/custom-agents-vs-code/main/scripts/bootstrap.sh | bash -s -- --handoff langchain --repo
+```
+
+Variables de entorno opcionales para apuntar a un fork o rama distinta:
+
+```bash
+REPO_OWNER=tuusuario REPO_REF=develop \
+  curl -fsSL .../scripts/bootstrap.sh | bash -s -- --handoff python --profile
+```
+
+### Desde el repo clonado
+
 1. Clona este repositorio.
 2. Instala un agente individual o un handoff completo.
 3. Valida la instalacion.
 4. Ejecuta tu flujo.
 
-### Instalar un agente
+#### Instalar un agente
 
 ```bash
 ./scripts/install.sh --agent shell-developer --repo
 ```
 
-### Instalar un handoff
+#### Instalar un handoff
 
 ```bash
 ./scripts/install.sh --handoff python --repo
