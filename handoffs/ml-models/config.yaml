@@ -1,0 +1,14 @@
+agents:
+  1: prompt-validator
+  2: ml-models-organizer
+  3: ml-models-test-engineer
+  4: ml-models-developer
+  5: ml-models-devops
+name: ml-models
+description: Flujo TDD completo para proyectos de Machine Learning y LLMs con PyTorch, Transformers y Hugging Face. Define estrategia de modelo, crea tests RED, implementa GREEN y valida calidad, cobertura y metricas con DevOps listo para CI/CD.
+dependencias:
+  - python3
+  - pip
+  - pytest
+  - pytest-cov
+  - docker

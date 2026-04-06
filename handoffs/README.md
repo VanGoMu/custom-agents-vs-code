@@ -18,6 +18,7 @@ Cada handoff vive en su carpeta y contiene:
 | `nextjs` | Flujo TDD Next.js App Router con Jest + RTL y verificacion final en Docker. | NextProjectOrganizer, NextTestEngineer, NextDeveloper, NextTestEngineer |
 | `langchain` | Flujo TDD LangChain: arquitectura, tests RED, implementacion GREEN y cobertura. | LangChainProjectOrganizer, LangChainTestEngineer, LangChainDeveloper, LangChainTestEngineer, LangChainDevOps |
 | `crewai` | Flujo TDD CrewAI: validacion inicial, arquitectura multiagente, RED/GREEN/VERIFY y DevOps. | PromptValidator, CrewAIProjectOrganizer, CrewAITestEngineer, CrewAIDeveloper, CrewAITestEngineer, CrewAIDevOps |
+| `ml-models` | Flujo TDD ML/LLM con PyTorch y Transformers: estrategia de modelo, RED, GREEN y DevOps con metricas. | PromptValidator, MLModelsOrganizer, MLModelsTestEngineer, MLModelsDeveloper, MLModelsDevOps |
 
 ## Instalacion
 

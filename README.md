@@ -14,6 +14,7 @@ Esta primera release esta enfocada en productividad de equipos que trabajan con 
 - Next.js
 - LangChain
 - CrewAI
+- ML/LLMs (PyTorch + Transformers)
 
 ## Que incluye esta release
 

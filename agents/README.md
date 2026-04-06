@@ -36,6 +36,10 @@ Catalogo de agentes atomicos reutilizables. Cada archivo `.agent.md` define un r
 | CrewAIDeveloper | `crewai-developer.agent.md` | Si | Fase GREEN del ciclo TDD para CrewAI: implementa el minimo codigo por contratos para pasar tests RED. |
 | CrewAITestEngineer | `crewai-test-engineer.agent.md` | Si | Fase RED y VERIFY para CrewAI: tests con doubles de LLM/tools y cobertura final en Docker. |
 | CrewAIDevOps | `crewai-devops.agent.md` | Si | CI local/remota para CrewAI en Python: pre-commit, Docker CI y GitHub Actions con cobertura minima del 80%. |
+| MLModelsOrganizer | `ml-models-organizer.agent.md` | Si | Arquitectura ML con decision explicita entre fine-tuning y custom, contratos de API y estructura de datos/modelo. |
+| MLModelsTestEngineer | `ml-models-test-engineer.agent.md` | Si | Fase RED y VERIFY para ML: tests de dataset, preprocessing, modelo, entrenamiento, inference y metricas. |
+| MLModelsDeveloper | `ml-models-developer.agent.md` | Si | Fase GREEN para ML: implementa el minimo codigo para pasar tests RED con PyTorch/Transformers. |
+| MLModelsDevOps | `ml-models-devops.agent.md` | Si | DevOps ML: pre-commit, Docker training/inference y GitHub Actions con cobertura y gates de metricas. |
 | PromptValidator | `prompt-validator.agent.md` | No | Valida si un prompt de inicializacion contiene informacion suficiente para arrancar un flujo. |
 | ProjectPlanner | `project-planner.agent.md` | No | Genera un plan de proyecto completo con stack, alcance MVP y arquitectura. |
 | SprintPlanner | `sprint-planner.agent.md` | No | Descompone un plan de proyecto en sprints iterativos con backlog. |
